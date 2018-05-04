@@ -1,27 +1,39 @@
 .c-navigation {
-  max-width: 1400px;
-  margin: 0 auto;
-  flex: auto;
   align-items: center;
-  display: flex;
   background-color: #d2e8e7;
+  display: block;
+  height: inherit;
+  border-bottom: 10px solid black;
 }
 
 .c-navigation__logo {
   align-items: center;
   display: flex;
+  height: 100px;
+  vertical-align: middle;
 }
 
-.c-navigation__logo-icon {
+.c-navigation__logo-icon img {
   height: 80px;
   width: 80px;
-
-  img {
-    height: 80px;
-    width: 80px;
-  }
 }
 
 .c-navigation__logo-text {
   display: inline;
+}
+
+.c-navigation__links ul {
+  list-style-type: none;
+  display: block;
+}
+
+.c-navigation__links ul li {
+  display: inline-block;
+  color: black;
+}
+
+.c-navigation__link {
+  padding: 0 24px;
+  text-decoration: none;
+  color: black;
 }
