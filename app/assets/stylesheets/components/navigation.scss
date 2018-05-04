@@ -1,0 +1,27 @@
+.c-navigation {
+  max-width: 1400px;
+  margin: 0 auto;
+  flex: auto;
+  align-items: center;
+  display: flex;
+  background-color: #d2e8e7;
+}
+
+.c-navigation__logo {
+  align-items: center;
+  display: flex;
+}
+
+.c-navigation__logo-icon {
+  height: 80px;
+  width: 80px;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.c-navigation__logo-text {
+  display: inline;
+}
