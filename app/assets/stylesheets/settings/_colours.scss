@@ -1,0 +1,9 @@
+$base-colours: (
+  white: #FFFFFF,
+  dark-grey: #2d2e30,
+  container-grey: #f4f4f4
+) !default;
+
+@function colour($name) {
+  @return map-get($base-colours, $name);
+}
