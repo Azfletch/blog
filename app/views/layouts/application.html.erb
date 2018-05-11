@@ -11,13 +11,14 @@
 
   <body>
     <div class="o-container">
+      <div class="o-container-hero">
+        <div class="c-hero">
+          <h1 class="c-text-alpha  c-hero__title">Arron Fletcher</h1>
+        </div>
+      </div>
       <div class="o-container-nav">
-        <div class="c-navigation  row">
-          <a href='/' class="c-navigation__logo  col-sm">
-            <div class="c-navigation__logo-icon"><%= image_tag('af-logo.png') %></div>
-            <h1 class="c-navigation__logo-text">Arron Fletcher</h1>
-          </a>
-          <nav class="c-navigation__links  col-sm ">
+        <div class="c-navigation">
+          <nav class="c-navigation__links">
             <ul>
               <li><%= link_to 'Homepage', controller: 'welcome' %></li>
               <li><a href='#' class="c-navigation__link" >Contact</a></li>
@@ -28,8 +29,8 @@
         </div>
       </div>
       <div class="o-container-content">
+        <%= yield %>
       </div>
     </div>
-    <%= yield %>
   </body>
 </html>

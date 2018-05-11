@@ -1,0 +1,34 @@
+.c-navigation {
+  background-color: colour(dark-grey);
+  height: inherit;
+}
+
+.c-navigation__links {
+  list-style-type: none;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.c-navigation__links li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c-navigation__links a {
+  color: colour(white);
+  vertical-align: middle;
+}
+
+.c-navigation__link {
+  padding: 0 80px;
+  text-decoration: none;
+
+}
+
+.c-navigation__links ul {
+  margin-bottom: 0;
+  vertical-align: middle;
+  text-align:center;
+}

@@ -1,0 +1,21 @@
+.c-hero {
+  align-items: center;
+  background-image: url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 400px;
+}
+
+.c-hero__title {
+  text-align: center;
+  vertical-align: middle;
+  color: colour(white);
+  display: block;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

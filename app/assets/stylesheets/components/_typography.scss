@@ -1,0 +1,18 @@
+$text-headings: (
+  alpha: 72px,
+  bravo: 48px,
+  charlie: 30px,
+  delta: 24px,
+  echo: 18px,
+  foxtrot: 16px
+) !default;
+
+@each $name, $size in $text-headings {
+  .c-text-#{$name} {
+    font-size: $size;
+  }
+}
+
+* {
+  line-height: 1.5em;
+}
