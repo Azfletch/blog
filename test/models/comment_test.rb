@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class CommentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should not save comments with text in body" do
+    comment = Comment.new
+    assert_not_nil comment.save
+  end
 end
