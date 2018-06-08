@@ -10,25 +10,15 @@
   </head>
 
   <body>
-    <div class="o-container">
-      <div class="o-container-hero">
-        <div class="c-hero">
-          <h1 class="c-text-alpha  c-hero__title">Arron Fletcher</h1>
-        </div>
+    <div class='o-grid-container'>
+      <div class='o-grid-item-a'>
+        <%= image_tag('hero', class: 'c-hero') %>
       </div>
-      <div class="o-container-nav">
-        <div class="c-navigation">
-          <nav class="c-navigation__links">
-            <ul>
-              <li><%= link_to 'Homepage', :welcome_index, class: 'c-navigation__link' %></li>
-              <li><a href='#' class="c-navigation__link" >Contact</a></li>
-              <li><%= link_to 'Articles', :admin_articles, class: 'c-navigation__link' %></li>
-              <li><a href="https://github.com/Azfletch/blog" class="c-navigation__link" >Github</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class='o-grid-item-b  c-sidebar'>
+        <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
+        <p class='c-sidebar__text'>list of articles here</p>
       </div>
-      <div class="o-container-content">
+      <div class='o-grid-item-c'>
         <%= yield %>
       </div>
     </div>

@@ -1,10 +1,16 @@
 .c-welcome {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: $base-spacing-unit*40;
   height: 100%;
-}
 
-.c-welcome-heading {
-  text-align: center;
-  margin-bottom: 30px;
+  &__heading {
+    text-align: center;
+    margin-bottom: $base-spacing-unit*1.5;
+    margin-top: $base-spacing-unit*2;
+  }
+
+  &__caption {
+    color: colour(heading-orange);
+    text-align: center;
+  }
 }

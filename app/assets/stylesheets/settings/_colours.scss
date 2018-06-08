@@ -1,8 +1,9 @@
 $base-colours: (
   white: #FFFFFF,
-  dark-grey: #2d2e30,
-  container-grey: #f4f4f4,
-  black: #000000
+  dark-grey: #262626,
+  light-grey: #f4f4f4,
+  black: #000000,
+  heading-orange: #ffad33
 ) !default;
 
 @function colour($name) {

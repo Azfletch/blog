@@ -1,11 +1,12 @@
 .c-hero {
-  align-items: center;
-  background-image: url(hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  height: 400px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  height: $base-spacing-unit*35;
+  width: auto;
 }
 
 .c-hero__title {

@@ -1,4 +1,6 @@
 @import "settings/colours.scss";
+@import "settings/fonts.scss";
+@import "settings/config.scss";
 
 @import "styles/articles.scss";
 @import "styles/comments.scss";
@@ -7,9 +9,10 @@
 @import "elements/body.scss";
 
 @import "objects/containers.scss";
+@import "objects/grid.scss";
 
 @import "components/hero.scss";
-@import "components/navigation.scss";
 @import "components/typography.scss";
+@import "components/sidebar.scss";
 
 @import "utils/normalize.scss";

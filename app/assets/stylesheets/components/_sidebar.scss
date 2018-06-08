@@ -1,0 +1,19 @@
+.c-sidebar {
+  background-color: colour(dark-grey);
+
+  &__heading {
+    color: colour(heading-orange);
+    margin-top: $base-spacing-unit*2;
+    text-align: center;
+  }
+  &__text {
+    color: colour(white);
+    text-align: center;
+  }
+  &__articles-table-head {
+    color: colour(heading-orange);
+  }
+  &__articles-table-cell {
+    color: colour(white);
+  }
+}
