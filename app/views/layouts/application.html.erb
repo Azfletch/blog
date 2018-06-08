@@ -20,9 +20,9 @@
         <div class="c-navigation">
           <nav class="c-navigation__links">
             <ul>
-              <li><%= link_to 'Homepage', controller: 'welcome' %></li>
+              <li><%= link_to 'Homepage', :welcome_index, class: 'c-navigation__link' %></li>
               <li><a href='#' class="c-navigation__link" >Contact</a></li>
-              <li><%= link_to 'Articles', controller: 'articles' %></li>
+              <li><%= link_to 'Articles', :admin_articles, class: 'c-navigation__link' %></li>
               <li><a href="https://github.com/Azfletch/blog" class="c-navigation__link" >Github</a></li>
             </ul>
           </nav>
