@@ -8,18 +8,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <div class='o-grid-container'>
-      <div class='o-grid-item-a'>
-        <%= image_tag('hero', class: 'c-hero') %>
-      </div>
-      <div class='o-grid-item-b  c-sidebar'>
-        <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
-        <p class='c-sidebar__text'>list of articles here</p>
-      </div>
-      <div class='o-grid-item-c'>
-        <%= yield %>
+    <div class='o-container'>
+      <div class='o-grid-container'>
+        <div class='o-grid-item-a'>
+          <%= image_tag('hero', class: 'c-hero') %>
+        </div>
+        <div class='o-grid-item-b  c-sidebar'>
+          <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
+          <p class='c-sidebar__text'>list of articles here</p>
+        </div>
+        <div class='o-grid-item-c'>
+          <div class='o-container__content'>
+            <%= yield %>
+          </div>
+        </div>
       </div>
     </div>
   </body>
