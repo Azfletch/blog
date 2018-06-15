@@ -1,21 +1,20 @@
-<div class="c-articles-show">
-  <div class="c-articles-show__heading  c-text-charlie">
+<div class="c-articles">
+  <div class="c-articles__heading  c-text-charlie">
     <h1>
       <%= @article.title %>
     </h1>
   </div>
-  <div class="c-articles-show__body  c-text-echo">
+  <div class="c-articles__body  c-text-echo">
     <p>
       <%= @article.text %>
     </p>
   </div>
-  <div class="c-articles-show__comments">
-    <h2>Comments</h2>
+  <div class="c-articles__comments">
     <%= render @article.comments %>
-
     <h2>Add a comment:</h2>
     <%= render 'comments/form' %>
-
-    <%= link_to 'Back', articles_path %>
+    <div class="c-button">
+      <%= link_to 'Back', articles_path %>
+    </div>
   </div>
 </div>

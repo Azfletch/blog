@@ -6,11 +6,11 @@
 @import 'styles/comments.scss';
 @import 'styles/welcome.scss';
 
-@import 'elements/body.scss';
-
 @import 'objects/containers.scss';
 @import 'objects/grid.scss';
 
+@import 'components/button.scss';
+@import 'components/form.scss';
 @import 'components/hero.scss';
 @import 'components/sidebar.scss';
 @import 'components/typography.scss';
