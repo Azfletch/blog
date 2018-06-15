@@ -1,9 +1,36 @@
-.c-articles-heading {
-  text-align: center;
-  margin: 30px 0px;
+.c-articles {
+  margin: 0 auto;
+  max-width: $base-spacing-unit*40;
+  height: 100%;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: $base-spacing-unit*1.5;
+    padding-top: $base-spacing-unit*2;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  &__table {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.c-articles-table {
-  margin-left: auto;
-  margin-right: auto;
+.c-articles-show {
+  margin: 0 auto;
+  max-width: $base-spacing-unit*40;
+  height: 100%;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: $base-spacing-unit*1.5;
+    padding-top: $base-spacing-unit*2;
+  }
+
+  h1 {
+    margin: 0;
+  }
 }

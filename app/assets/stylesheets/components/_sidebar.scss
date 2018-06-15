@@ -9,7 +9,17 @@
   &__text {
     color: colour(white);
     text-align: center;
+
+    a {
+      color: colour(heading-orange);
+      text-decoration: none;
+
+      &:hover {
+        color: colour(border-blue);
+      }
+    }
   }
+
   &__articles-table-head {
     color: colour(heading-orange);
   }

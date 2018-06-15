@@ -1,6 +1,6 @@
 class Admin::ArticlesController < Admin::BaseController
 
-  before_action :params_id, only: [:show, :edit]
+before_action :article_id, only: [:show, :edit]
 
   def index
     @articles = Article.all

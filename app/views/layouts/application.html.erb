@@ -17,8 +17,9 @@
         <div class='o-grid-item-b  c-sidebar'>
           <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
           <div class='c-sidebar__text'>
-            <%= articles_for_sidebar.each do |article| %>
+            <% articles_for_sidebar.each do |article| %>
               <p><%= article.title %></p>
+              <%= link_to 'Show', article_path(article) %>
             <% end %>
           </div>
         </div>
