@@ -16,7 +16,11 @@
         </div>
         <div class='o-grid-item-b  c-sidebar'>
           <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
-          <p class='c-sidebar__text'>list of articles here</p>
+          <div class='c-sidebar__text'>
+            <%= articles_for_sidebar.each do |article| %>
+              <p><%= article.title %></p>
+            <% end %>
+          </div>
         </div>
         <div class='o-grid-item-c'>
           <div class='o-container__content'>
