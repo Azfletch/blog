@@ -16,8 +16,13 @@
 
       &:hover {
         color: colour(border-blue);
+        transition: ease-in-out 0.3s all;
       }
     }
+  }
+
+  &__burger {
+    display: none;
   }
 
   &__articles-table-head {
@@ -25,5 +30,27 @@
   }
   &__articles-table-cell {
     color: colour(white);
+  }
+}
+
+@media (max-width: 450px) {
+  .c-sidebar {
+    padding: $base-spacing-unit*1.5;
+
+    &__text {
+      display: none;
+    }
+
+    &__heading {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__burger:hover {
+      cursor: pointer;
+    }
   }
 }

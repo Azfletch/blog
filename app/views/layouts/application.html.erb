@@ -4,7 +4,6 @@
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,6 +14,7 @@
           <%= image_tag('hero', class: 'c-hero') %>
         </div>
         <div class='o-grid-item-b  c-sidebar'>
+          <%= image_tag('burger', class: 'c-sidebar__burger') %>
           <h1 class='c-sidebar__heading  c-text-delta'>Featured Articles</h1>
           <div class='c-sidebar__text'>
             <% articles_for_sidebar.each do |article| %>

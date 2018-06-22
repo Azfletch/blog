@@ -28,3 +28,13 @@
   grid-row-start: row1-end;
   grid-row-end: last-line;
 }
+
+@media (max-width: 450px) {
+  .o-grid-container {
+    display: block;
+  }
+
+  .o-grid-item-a {
+    display: none;
+  }
+}

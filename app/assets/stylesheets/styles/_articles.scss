@@ -14,12 +14,41 @@
     margin: 0;
   }
 
+  &__timestamp {
+    color: colour(heading-orange);
+    text-align: center;
+  }
+
+  &__body {
+    margin: 0 auto;
+    width: 75%;
+  }
+
   &__table {
     margin-left: auto;
     margin-right: auto;
   }
 
   &__comments {
+    margin: 0 auto;
+    border-radius: 3px;
+    color: colour(heading-orange);
+    background-color: colour(border-blue);
+    padding: $base-spacing-unit;
+    width: 75%;
     margin-bottom: $base-spacing-unit*2;
+    text-align: center;
+    padding-bottom: $base-spacing-unit;
+
+    &-form {
+      background-color: colour(heading-orange);
+      margin-top: 5px;
+      border-radius: 3px;
+      text-align: center;
+    }
+  }
+
+  &__table-head {
+    color: colour(heading-orange);
   }
 }
