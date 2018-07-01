@@ -1,0 +1,97 @@
+.c-navigation {
+  overflow: auto;
+  left: 110%;
+  position: absolute;
+  z-index: 999;
+  transition: left 0.25s;
+  margin: 0;
+
+  &__checkbox {
+    visibility: hidden;
+  }
+
+  &__checkbox:checked~.c-nav__menu {
+    left: 10%;
+  }
+
+  &__menu_button {
+    display: block;
+    background: url("https://procoders-163c.kxcdn.com/static/burger_menu.svg") no-repeat center center;
+    text-indent: -200%;
+    width: 37px;
+    height: 37px;
+    float: right;
+    color: black;
+    margin-top: $base-spacing-unit/4;
+    margin-right: 2rem;
+  }
+
+  &__links {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+      color: colour(heading-orange);
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        color: colour(border-blue);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+    li {
+      display: block;
+    }
+    ul {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align:center;
+    }
+  }
+  &__link {
+    padding: 0 40px;
+    text-decoration: none;
+  }
+}
+
+
+@media (min-width: 450px) {
+
+    .c-navigation {
+    left: 5%;
+    width: 70%;
+
+    &__links {
+      list-style-type: none;
+      margin-left: auto;
+      margin-right: auto;
+      a {
+        color: colour(heading-orange);
+        text-decoration: none;
+
+        &:hover {
+          color: colour(border-blue);
+          transition: ease-in-out 0.3s all;
+        }
+      }
+      li {
+        display: inline-block;
+      }
+      ul {
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align:center;
+      }
+    }
+
+    &__menu_button {
+      display: none
+    }
+
+    &__link {
+      padding: 0 40px;
+      text-decoration: none;
+    }
+  }
+}

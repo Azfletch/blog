@@ -22,7 +22,9 @@
   }
 
   &__burger {
-    display: none;
+    display: block;
+    padding-top: $base-spacing-unit;
+    padding-left: $base-spacing-unit;
   }
 
   &__articles-table-head {
@@ -35,22 +37,6 @@
 
 @media (max-width: 450px) {
   .c-sidebar {
-    padding: $base-spacing-unit*1.5;
-
-    &__text {
-      display: none;
-    }
-
-    &__heading {
-      display: none;
-    }
-
-    &__burger {
-      display: block;
-    }
-
-    &__burger:hover {
-      cursor: pointer;
-    }
+    display: none;
   }
 }

@@ -6,4 +6,9 @@
     background-color: colour(white);
     height: 100%;
   }
+
+  &__navigation {
+    background-color: colour(dark-grey);
+    height: 50px;
+  }
 }
