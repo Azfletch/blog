@@ -23,24 +23,23 @@
           </div>
         </div>
         <div class='o-grid-item-c'>
-          <div class='o-container__navigation'>
+          <div class='o-container__navigation  c-navigation'>
             <input id='burger-menu' type='checkbox' class='c-navigation__checkbox' />
             <label for='burger-menu' class='c-navigation__menu_button'>
               Menu
             </label>
-            <div class="c-navigation">
-              <nav class="c-navigation__links">
-                <ul>
+              <nav class="c-navigation__menu">
+                <ul class='c-navigation__menu_list'>
                   <li><%= link_to 'Homepage', controller: 'welcome' %></li>
-                  <li><a href='#' class="c-navigation__link" >Contact</a></li>
+                  <li><a href='#'>Contact</a></li>
                   <li><%= link_to 'Articles', controller: 'articles' %></li>
-                  <li><a href="https://github.com/Azfletch/blog" class="c-navigation__link" >Github</a></li>
+                  <li><a href="https://github.com/Azfletch/blog">Github</a></li>
                 </ul>
               </nav>
             </div>
-          </div>
-          <div class='o-container__content'>
-            <%= yield %>
+            <div class='o-container__content'>
+              <%= yield %>
+            </div>
           </div>
         </div>
       </div>
