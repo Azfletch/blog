@@ -1,6 +1,6 @@
 class Admin::ArticlesController < Admin::BaseController
 
-before_action :article_id, only: [:show, :edit]
+before_action :get_article, only: [:show, :edit]
 
   def index
     @articles = Article.all
@@ -22,7 +22,7 @@ before_action :article_id, only: [:show, :edit]
     if @article.save
       redirect_to @article
     else
-      render 'new'
+      render "new"
     end
   end
 
@@ -32,7 +32,7 @@ before_action :article_id, only: [:show, :edit]
     if @article.update(article_params)
       redirect_to @article
     else
-      render 'edit'
+      render "edit"
     end
   end
 
@@ -48,7 +48,7 @@ before_action :article_id, only: [:show, :edit]
       params.require(:article).permit(:title, :text)
     end
 
-    def article_id
+    def get_article
       @article = Article.find(params[:id])
     end
 end

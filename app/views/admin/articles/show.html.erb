@@ -1,26 +1,26 @@
 <div class="c-articles">
-  <div class="c-articles__heading  c-text-charlie">
+  <div class="c-articles__heading  c-text-medium">
     <h1>
       <%= @article.title %>
     </h1>
   </div>
-  <div class="c-articles__timestamp  c-text-delta">
+  <div class="c-articles__timestamp  c-text-small">
     <p>
       <%= @article.created_at.to_formatted_s(:short) %>
     </p>
   </div>
-  <div class="c-articles__body  c-text-echo">
+  <div class="c-articles__body  c-text-extra-small">
     <p>
       <%= @article.text %>
     </p>
   </div>
   <div class="c-articles__comments">
     <%= render @article.comments %>
-    <div class='c-articles__comments-heading'>
+    <div class="c-articles__comments-heading">
       <h2>Add a comment:</h2>
     </div>
-    <%= render 'comments/form' %>
-    <%= link_to 'Edit', edit_admin_article_path(@article), class: 'c-button' %>
-    <%= link_to 'Back', admin_articles_path, class: 'c-button' %>
+    <%= render "comments/form" %>
+    <%= link_to "Edit", edit_admin_article_path(@article), class: "o-button" %>
+    <%= link_to "Back", admin_articles_path, class: "o-button" %>
   </div>
 </div>

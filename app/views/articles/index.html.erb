@@ -1,19 +1,19 @@
-<div class='c-articles'>
-  <div class='c-articles__heading  c-text-charlie'>
+<div class="c-articles">
+  <div class="c-articles__heading  c-text-medium">
     <h1>All Published Articles</h1>
   </div>
-  <div class='c-articles__content'>
+  <div class="c-articles__content">
     <% @articles.each do |article| %>
-    <div class='c-articles__content-title'>
-      <h1><%= link_to article.title, article_path(article) %></h1>
-    </div>
-    <div class='c-articles__content-text c-text-delta'>
-      <%= article.text.truncate(50) %>
-    </div>
-    <div class='c-articles__content-date'>
-      <%= article.created_at.to_formatted_s(:short) %>
-    </div>
-    <hr />
+      <div class="c-articles__content-title">
+        <h1><%= link_to article.title, article_path(article) %></h1>
+      </div>
+      <div class="c-articles__content-text c-text-small">
+        <%= article.text.truncate(50) %>
+      </div>
+      <div class="c-articles__content-date">
+        <%= article.created_at.to_formatted_s(:short) %>
+      </div>
+      <hr />
     <% end %>
   </div>
 </div>

@@ -1,26 +1,26 @@
 <div class="c-articles">
-  <div class="c-articles__heading  c-text-charlie">
+  <div class="c-articles__heading  c-text-medium">
     <h1>
       <%= @article.title %>
     </h1>
   </div>
-  <div class="c-articles__timestamp  c-text-delta">
+  <div class="c-articles__timestamp  c-text-small">
     <p>
       <%= @article.created_at.to_formatted_s(:short) %>
     </p>
   </div>
-  <div class="c-articles__body  c-text-echo">
+  <div class="c-articles__body  c-text-extra-small">
     <p>
       <%= @article.text %>
     </p>
   </div>
   <div class="c-articles__comments">
     <%= render @article.comments %>
-    <div class='c-articles__comments-heading'>
+    <div class="c-articles__comments-heading">
       <h2>Add a comment:</h2>
     </div>
-    <%= render 'comments/form' %>
-    <%= link_to 'Back', articles_path, class: 'c-button' %>
+    <%= render "comments/form" %>
+    <%= link_to "Back", articles_path, class: "o-button" %>
   </div>
   <div id="disqus_thread"></div>
 <script>
@@ -30,14 +30,14 @@
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page"s canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page"s unique identifier variable
 };
 */
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://arron-fletcher-blog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
+(function() { // DON"T EDIT BELOW THIS LINE
+var d = document, s = d.createElement("script");
+s.src = "https://arron-fletcher-blog.disqus.com/embed.js";
+s.setAttribute("data-timestamp", +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>

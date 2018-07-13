@@ -1,10 +1,9 @@
 $text-headings: (
-  alpha: 72px,
-  bravo: 48px,
-  charlie: 30px,
-  delta: 24px,
-  echo: 18px,
-  foxtrot: 16px
+  extra-large: 72px,
+  large: 48px,
+  medium: 30px,
+  small: 24px,
+  extra-small: 18px
 ) !default;
 
 @each $name, $size in $text-headings {
@@ -14,7 +13,7 @@ $text-headings: (
 }
 
 * {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   line-height: 1em;
 }

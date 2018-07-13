@@ -1,26 +1,26 @@
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: local('Rubik'), local('Rubik-Regular'),
-       url('/assets/fonts/rubik-v6-latin-regular.woff2') format('woff2'),
-       url('/assets/fonts/rubik-v6-latin-regular.woff') format('woff');
+  src: local("Rubik"), local("Rubik-Regular"),
+       url("/assets/fonts/rubik-v6-latin-regular.woff2") format("woff2"),
+       url("/assets/fonts/rubik-v6-latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  src: local('Rubik Medium'), local('Rubik-Medium'),
-       url('/assets/fonts/rubik-v6-latin-500.woff2') format('woff2'),
-       url('/assets/fonts/rubik-v6-latin-500.woff') format('woff');
+  src: local("Rubik Medium"), local("Rubik-Medium"),
+       url("/assets/fonts/rubik-v6-latin-500.woff2") format("woff2"),
+       url("/assets/fonts/rubik-v6-latin-500.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  src: local('Rubik Light'), local('Rubik-Light'),
-       url('/assets/fonts/rubik-v6-latin-300.woff2') format('woff2'),
-       url('/assets/fonts/rubik-v6-latin-300.woff') format('woff');
+  src: local("Rubik Light"), local("Rubik-Light"),
+       url("/assets/fonts/rubik-v6-latin-300.woff2") format("woff2"),
+       url("/assets/fonts/rubik-v6-latin-300.woff") format("woff");
 }

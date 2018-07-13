@@ -60,6 +60,10 @@
         text-decoration: none;
         color: black;
         font-weight: 400;
+        &:hover {
+          color: colour(heading-orange);
+          transition: ease-in-out 0.3s all;
+        }
       }
     }
     &-text {

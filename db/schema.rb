@@ -6,9 +6,9 @@
 # database schema. If you need to create the application database on another
 # system, you should be using db:schema:load, not running all the migrations
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
-# you'll amass, the slower it'll run and the greater likelihood for issues).
+# you"ll amass, the slower it"ll run and the greater likelihood for issues).
 #
-# It's strongly recommended that you check this file into your version control system.
+# It"s strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2018_05_18_131331) do
 
@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(version: 2018_05_18_131331) do
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.bigint "article_id"
+    t.bigint "get_article"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["article_id"], name: "index_comments_on_article_id"
+    t.index ["get_article"], name: "index_comments_on_get_article"
   end
 
   create_table "_models", force: :cascade do |t|

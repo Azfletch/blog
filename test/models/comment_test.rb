@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class CommentTest < ActiveSupport::TestCase
   test "should not save comments with text in body" do
