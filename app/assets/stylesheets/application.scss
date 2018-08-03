@@ -1,15 +1,18 @@
 @import "settings/colours.scss";
+@import "settings/config.scss";
+@import "settings/fonts.scss";
 
-@import "styles/articles.scss";
-@import "styles/comments.scss";
-@import "styles/welcome.scss";
-
-@import "elements/body.scss";
-
+@import "objects/button.scss";
 @import "objects/containers.scss";
+@import "objects/form.scss";
+@import "objects/grid.scss";
 
+@import "components/articles.scss";
+@import "components/comments.scss";
 @import "components/hero.scss";
 @import "components/navigation.scss";
-@import "components/typography.scss";
+@import "components/sidebar.scss";
+@import "components/welcome.scss";
 
 @import "utils/normalize.scss";
+@import "utils/typography.scss";

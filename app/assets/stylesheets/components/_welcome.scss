@@ -1,0 +1,24 @@
+.c-welcome {
+  margin: 0 auto;
+  max-width: $base-spacing-unit*40;
+  height: 100%;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: $base-spacing-unit*1.5;
+    padding-top: $base-spacing-unit*2;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  &__caption {
+    color: colour(heading-orange);
+    text-align: center;
+  }
+
+  &__body {
+    color: colour(black);
+  }
+}

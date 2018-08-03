@@ -1,27 +1,29 @@
 <div class="o-container-content">
   <div class="c-articles">
-    <h1 class='c-articles-heading'>All Published Articles</h1>
-    <table class="c-articles-table">
-      <tr class="c-articles-table-row">
-        <th class="c-articles-table-head">Title</th>
-        <th class="c-articles-table-head">Text</th>
-        <th class="c-articles-table-head"></th>
-        <th class="c-articles-table-head"></th>
-        <th class="c-articles-table-head"></th>
+    <div class="c-articles__heading  c-text-medium">
+      <h1>All Published Articles</h1>
+    </div>
+    <table class="c-articles__table">
+      <tr class="c-articles__table-row">
+        <th class="c-articles__table-head">Title</th>
+        <th class="c-articles__table-head">Text</th>
+        <th class="c-articles__table-head"></th>
+        <th class="c-articles__table-head"></th>
+        <th class="c-articles__table-head"></th>
       </tr>
 
       <% @articles.each do |article| %>
-        <tr class="c-articles-table-row">
-          <td class="c-articles-table-cell"><%= article.title %></td>
-          <td class="c-articles-table-cell"><%= article.text %></td>
-          <td class="c-articles-table-cell"><%= link_to 'Show', article_path(article) %></td>
-          <td class="c-articles-table-cell"><%= link_to 'Edit', edit_admin_article_path(article) %></td>
-          <td class="c-articles-table-cell"><%= link_to 'Destroy', admin_article_path(article),
+        <tr class="c-articles__table-row">
+          <td class="c-articles__table-cell"><%= article.title %></td>
+          <td class="c-articles__table-cell"><%= article.text %></td>
+          <td class="c-articles__table-cell"><%= link_to "Show", article_path(article) %></td>
+          <td class="c-articles__table-cell"><%= link_to "Edit", edit_admin_article_path(article) %></td>
+          <td class="c-articles__table-cell"><%= link_to "Destroy", admin_article_path(article),
                   method: :delete,
-                  data: { confirm: 'Are you sure?' } %></td>
+                  data: { confirm: "Are you sure?" } %></td>
         </tr>
       <% end %>
     </table>
-    <div class="c-articles-new"><%= link_to 'Write a new article', new_admin_article_path %></div>
+    <div class="c-articles-new"><%= link_to "Write a new article", new_admin_article_path %></div>
   </div>
 </div>

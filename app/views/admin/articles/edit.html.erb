@@ -1,5 +1,11 @@
-<h1>Edit article</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', articles_path %>
+<div class="c-articles">
+  <div class="c-articles__heading c-text-medium">
+    <h1>Edit article</h1>
+  </div>
+  <div class="o-form">
+    <%= render "form" %>
+  </div>
+  <div class="o-button">
+    <%= link_to "Back", admin_article_path %>
+  </div>
+</div>

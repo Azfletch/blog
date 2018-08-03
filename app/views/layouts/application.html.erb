@@ -4,32 +4,44 @@
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-
   <body>
     <div class="o-container">
-      <div class="o-container-hero">
-        <div class="c-hero">
-          <h1 class="c-text-alpha  c-hero__title">Arron Fletcher</h1>
+      <div class="o-grid-container">
+        <div class="o-grid-item-a">
+          <%= image_tag("hero", class: "c-hero") %>
         </div>
-      </div>
-      <div class="o-container-nav">
-        <div class="c-navigation">
-          <nav class="c-navigation__links">
-            <ul>
-              <li><%= link_to 'Homepage', :welcome_index, class: 'c-navigation__link' %></li>
-              <li><a href='#' class="c-navigation__link" >Contact</a></li>
-              <li><%= link_to 'Articles', :admin_articles, class: 'c-navigation__link' %></li>
-              <li><a href="https://github.com/Azfletch/blog" class="c-navigation__link" >Github</a></li>
-            </ul>
-          </nav>
+        <div class="o-grid-item-b  c-sidebar">
+          <h1 class="c-sidebar__heading  c-text-small">Featured Articles</h1>
+          <div class="c-sidebar__text">
+            <% articles_for_sidebar.each do |article| %>
+              <p><%= article.title %></p>
+              <%= link_to "Show", article_path(article) %>
+            <% end %>
+          </div>
         </div>
-      </div>
-      <div class="o-container-content">
-        <%= yield %>
+        <div class="o-grid-item-c">
+          <div class="o-container__navigation  c-navigation">
+            <input id="burger-menu" type="checkbox" class="c-navigation__checkbox" />
+            <label for="burger-menu" class="c-navigation__menu_button">
+              Menu
+            </label>
+              <nav class="c-navigation__menu">
+                <ul class="c-navigation__menu_list">
+                  <li><%= link_to "Homepage", welcome_index_path %></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><%= link_to "Articles", controller: "articles" %></li>
+                  <li><a href="https://github.com/Azfletch/blog">Github</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="o-container__content">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
