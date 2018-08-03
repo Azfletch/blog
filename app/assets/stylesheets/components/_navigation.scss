@@ -5,6 +5,12 @@ body {
 .c-navigation {
   height: 50px;
   background-color: colour(dark-grey);
+  @media (min-width: 600px) {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: colour(dark-grey);
+    display: flex;
+  }
   a {
     text-decoration: none;
     cursor: pointer;
@@ -29,6 +35,14 @@ body {
     list-style-type: none;
     margin-left: auto;
     margin-right: auto;
+    @media (min-width: 600px) {
+      overflow: visible;
+      width: 100%;
+      background-color: transparent;
+      position: initial;
+      z-index: 1;
+      height: initial;
+    }
     a {
       color: colour(heading-orange);
       cursor: pointer;
@@ -51,6 +65,17 @@ body {
     &_list {
       list-style: none;
       padding-left: 3rem;
+      @media (min-width: 600px) {
+        margin: 0;
+        li {
+            display: inline-block;
+            padding: 18px;
+        }
+        a {
+          text-align: center;
+          color: colour(heading-orange);
+        }
+      }
     }
     &_button {
       display: block;
@@ -62,38 +87,8 @@ body {
       margin-top: 0.5rem;
       color: black;
       margin-right: 2rem;
-    }
-  }
-}
-
-@media (min-width: 600px) {
-  .c-navigation {
-    padding-left: 0;
-    padding-right: 0;
-    background-color: colour(dark-grey);
-    display: flex;
-    &__menu {
-      overflow: visible;
-      width: 100%;
-      background-color: transparent;
-      position: initial;
-      z-index: 1;
-      height: initial;
-      &_button {
+      @media (min-width: 600px) {
         display: none;
-      }
-      &_list {
-        margin: 0;
-
-        li {
-            display: inline-block;
-            padding: 18px;
-        }
-
-        a {
-          text-align: center;
-          color: colour(heading-orange);
-        }
       }
     }
   }

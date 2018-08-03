@@ -2,7 +2,7 @@
   margin: 0 auto;
   max-width: $base-spacing-unit*40;
   height: 100%;
-  padding-bottom: $base-spacing-unit*2;
+  padding-bottom: auto;
 
   &__heading {
     text-align: center;
@@ -38,13 +38,14 @@
     width: 75%;
     margin-bottom: $base-spacing-unit*2;
     text-align: center;
-    padding-bottom: $base-spacing-unit;
+    padding-bottom: 50px
 
     &-form {
       background-color: colour(heading-orange);
       margin-top: 5px;
       border-radius: 3px;
       text-align: center;
+      padding-bottom: $base-spacing-unit;
     }
   }
 
