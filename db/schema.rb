@@ -25,16 +25,10 @@ ActiveRecord::Schema.define(version: 2018_05_18_131331) do
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.bigint "get_article"
+    t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["get_article"], name: "index_comments_on_get_article"
-  end
-
-  create_table "_models", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
   add_foreign_key "comments", "articles"
