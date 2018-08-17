@@ -1,0 +1,31 @@
+.c-footer {
+  background-color: colour(dark-grey);
+  width: 100%;
+  padding-top: $base-spacing-unit;
+  h2 {
+    margin: 0;
+    color: colour(heading-orange);
+    text-align: center;
+    padding-bottom: $base-spacing-unit;
+  }
+  &__form {
+    margin: auto;
+    &-input {
+      &-heading {
+        color: colour(heading-orange);
+      }
+      &-field {
+        display: inline-block;
+        border-color: colour(heading-orange);
+        background-color: colour(dark-grey);
+        border-radius: 5px;
+        color: colour(heading-orange);
+        height: 35px;
+        margin-bottom: $base-spacing-unit;
+      }
+      &-button {
+        margin: auto;
+      }
+    }
+  }
+}
