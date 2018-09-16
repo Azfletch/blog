@@ -1,3 +1,3 @@
 class Admin::BaseController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "password", except: [:index, :show]
+  http_basic_authenticate_with name: ENV.fetch("ADMIN_NAME"), password: ENV.fetch("ADMIN_PASSWORD"), except: [:index, :show]
 end
