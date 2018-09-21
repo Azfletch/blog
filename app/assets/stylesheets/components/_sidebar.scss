@@ -1,9 +1,10 @@
 .c-sidebar {
   background-color: colour(dark-grey);
+  padding: 1.5em;
 
   &__heading {
     color: colour(heading-orange);
-    margin-top: $base-spacing-unit*2;
+    margin-top: $base-spacing-unit;
     text-align: center;
   }
   &__text {
