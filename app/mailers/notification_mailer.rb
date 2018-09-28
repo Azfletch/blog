@@ -3,11 +3,6 @@ class NotificationMailer < ApplicationMailer
 
   def notification_email(article)
     @article = article
-
-    if Notification.all.empty?
-      mail(to: "donald@duck.com", subject: "preview email")
-    end
-    
     @notification = Notification.all
     @notification.each do |n|
       mail(to: n.email, subject: "New blog post!!!")
