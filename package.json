@@ -2,5 +2,7 @@
   "name": "blog",
   "private": true,
   "dependencies": {
+    "hyper-history": "^1.0.15",
+    "hyper-tab-icons": "^2.1.0"
   }
 }
