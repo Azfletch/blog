@@ -6,7 +6,7 @@
         <%= form.text_field :name, required: true, placeholder: "Name:", class: "c-footer__form-input-field" %>
       </p>
       <p class="o-grid__footer-item-b">
-        <%= form.text_field :email, required: true, placeholder: "Email:", class: "c-footer__form-input-field" %>
+        <%= form.text_field :email, :pattern => "[^@]+@[^@]+\.[a-zA-Z]{2,6}", required: true, placeholder: "Email:", class: "c-footer__form-input-field" %>
       </p>
       <p class="o-grid__footer-item-c">
         <%= form.submit "Sign Up", class: "o-button  c-footer__form-button" %>
