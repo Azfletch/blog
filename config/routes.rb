@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    get '/', action: :index
     resources :articles, :comments
   end
 
