@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <div class="o-container">
+      <div class="c-admin">
+        <div class="c-admin__header">
+          <h1 class="c-admin__header-title">Admin Panel</h1>
+          <p class="c-admin__header-text"><%= link_to "Back to App", welcome_index_path %></p>
+        </div>
+        <div class="c-admin__body">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
