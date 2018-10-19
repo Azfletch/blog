@@ -30,5 +30,20 @@
     &-option {
       display: inline;
     }
+
+    &-title {
+      h1 {
+        font-size: 16px;
+      }
+    }
+
+    &-text {
+      padding-top: $base-spacing-unit;
+      padding-bottom: $base-spacing-unit;
+    }
+    &-date {
+      font-weight: lighter;
+      color: colour(heading-orange);
+    }
   }
 }
