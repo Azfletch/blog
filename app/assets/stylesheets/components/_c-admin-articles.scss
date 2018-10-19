@@ -10,14 +10,25 @@
     }
   }
 
-  &__content {
+  &__grid {
     display: grid;
     grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
 
-    hr {
-      width: 90%;
-      border-color: colour(heading-orange);
-      margin: $base-spacing-unit;
+    &-item-1 {
+      grid-column-start: [col1-start];
+      grid-column-end: [col2-start];
+    }
+
+    &-item-2 {
+      grid-column-start: [col2-start];
+      grid-column-end: [end];
+    }
+  }
+
+  &__content {
+
+    &-option {
+      display: inline;
     }
   }
 }
