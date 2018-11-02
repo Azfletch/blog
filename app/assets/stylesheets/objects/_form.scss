@@ -23,6 +23,13 @@
       border-radius: 5px;
       border: 2px solid colour(heading-orange);
       color: colour(dark-grey);
+
+      &:hover {
+        transition: ease-in-out 0.3s all;
+        background-color: colour(border-blue);
+        color: colour(heading-orange);
+        cursor: pointer;
+      }
     }
   }
 }

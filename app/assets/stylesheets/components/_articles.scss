@@ -28,6 +28,17 @@
     color: colour(dark-grey);
     margin: auto;
 
+    &:hover {
+      transition: ease-in-out 0.3s all;
+      background-color: colour(border-blue);
+      cursor: pointer;
+
+      a {
+        color: colour(heading-orange);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+
     a {
       text-decoration: none;
       color: colour(dark-grey);
