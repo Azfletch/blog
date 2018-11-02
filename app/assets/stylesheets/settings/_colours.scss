@@ -4,7 +4,11 @@ $base-colours: (
   light-grey: #9b9b9b,
   black: #000000,
   heading-orange: #ffad33,
-  border-blue: #2b3d5a
+  border-blue: #2b3d5a,
+
+  text-error: #b00000,
+
+  background-error: #ecabab
 ) !default;
 
 @function colour($name) {
