@@ -1,14 +1,18 @@
 $base-colours: (
-  white: #FFFFFF,
-  dark-grey: #262626,
-  light-grey: #9b9b9b,
-  black: #000000,
-  heading-orange: #ffad33,
-  border-blue: #2b3d5a,
+  background-error: #ecabab,
+  background-dark: #262626,
+  background-light: #ffffff,
+  background-primary: #2b3d5a,
+  background-secondary: #9b9b9b,
+
+  border-secondary: #9b9b9b,
+  border-highlight: #ffad33,
 
   text-error: #b00000,
-
-  background-error: #ecabab
+  text-focus: #2b3d5a,
+  text-default: #262626,
+  text-light: #ffffff,
+  text-secondary: #ffad33,
 ) !default;
 
 @function colour($name) {

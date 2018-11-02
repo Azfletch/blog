@@ -4,8 +4,8 @@
   box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
 
   &__header {
-    background-color: colour(dark-grey);
-    color: colour(heading-orange);
+    background-color: colour(background-dark);
+    color: colour(text-secondary);
     padding: 1em;
     display: grid;
     grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
@@ -15,12 +15,12 @@
 
       a {
         text-decoration: none;
-        color: colour(heading-orange);
+        color: colour(text-secondary);
         float: right;
         vertical-align: bottom;
 
         &:hover {
-          color: colour(border-blue);
+          color: colour(text-focus);
           transition: ease-in-out 0.3s all;
         }
       }
@@ -28,8 +28,8 @@
   }
 
   &__nav {
-    background-color: colour(light-grey);
-    color: colour(dark-grey);
+    background-color: colour(background-secondary);
+    color: colour(text-default);
     padding: 0.2em;
 
     &-list {
@@ -38,12 +38,12 @@
 
     a {
       text-align: center;
-      color: colour(dark-grey);
+      color: colour(text-default);
       cursor: pointer;
       text-decoration: none;
 
       &:hover {
-        color: colour(heading-orange);
+        color: colour(text-secondary);
         transition: ease-in-out 0.3s all;
       }
     }
@@ -59,7 +59,7 @@
   }
 
   &__body {
-    background-color: colour(white);
+    background-color: colour(background-light);
     text-align: center;
     padding: 1em;
 

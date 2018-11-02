@@ -5,18 +5,18 @@ $button-border-width: 1px;
 
 .o-button {
   padding: $button-base-spacing $button-base-spacing*2;
-  background: colour(dark-grey);
+  background: colour(background-dark);
   font-family: "Rubik", sans-serif;
-  color: colour(heading-orange);
-  border: $button-border-width solid colour(heading-orange);
+  color: colour(text-secondary);
+  border: $button-border-width solid colour(text-secondary);
   border-radius: $button-base-radius;
   text-decoration: none;
   text-align: center;
 
   &:hover {
     cursor: pointer;
-    color: colour(border-blue);
-    background-color: colour(heading-orange);
+    color: colour(text-focus);
+    background-color: colour(text-secondary);
     transition: ease-in-out 0.5s all;
   }
 }

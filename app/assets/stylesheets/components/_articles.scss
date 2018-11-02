@@ -15,33 +15,33 @@
   }
 
   &__timestamp {
-    color: colour(heading-orange);
+    color: colour(text-secondary);
     text-align: center;
   }
 
   &__button {
     width: 60%;
-    background-color: colour(light-grey);
+    background-color: colour(background-secondary);
     padding: $base-spacing-unit / 2;
     border-radius: 5px;
-    border: 2px solid colour(heading-orange);
-    color: colour(dark-grey);
+    border: 2px solid colour(text-secondary);
+    color: colour(text-default);
     margin: auto;
 
     &:hover {
       transition: ease-in-out 0.3s all;
-      background-color: colour(border-blue);
+      background-color: colour(background-primary);
       cursor: pointer;
 
       a {
-        color: colour(heading-orange);
+        color: colour(text-secondary);
         transition: ease-in-out 0.3s all;
       }
     }
 
     a {
       text-decoration: none;
-      color: colour(dark-grey);
+      color: colour(text-default);
     }
   }
 
@@ -58,8 +58,8 @@
   &__comments {
     margin: 0 auto;
     border-radius: 3px;
-    color: colour(heading-orange);
-    background-color: colour(border-blue);
+    color: colour(text-secondary);
+    background-color: colour(background-primary);
     padding: $base-spacing-unit;
     width: 75%;
     margin-bottom: $base-spacing-unit*2;
@@ -67,7 +67,7 @@
     padding-bottom: 50px;
 
     &-form {
-      background-color: colour(heading-orange);
+      background-color: colour(text-secondary);
       margin-top: 5px;
       border-radius: 3px;
       text-align: center;
@@ -79,16 +79,16 @@
     padding: $base-spacing-unit;
     hr {
       width: 90%;
-      border-color: colour(heading-orange);
+      border-color: colour(text-secondary);
       margin: $base-spacing-unit;
     }
     &-title {
       a {
         text-decoration: none;
-        color: black;
+        color: colour(text-default);
         font-weight: 400;
         &:hover {
-          color: colour(heading-orange);
+          color: colour(text-secondary);
           transition: ease-in-out 0.3s all;
         }
       }
@@ -99,7 +99,7 @@
     }
     &-date {
       font-weight: lighter;
-      color: colour(heading-orange);
+      color: colour(text-secondary);
     }
   }
 }

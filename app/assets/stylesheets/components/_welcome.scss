@@ -14,11 +14,11 @@
   }
 
   &__caption {
-    color: colour(heading-orange);
+    color: colour(text-secondary);
     text-align: center;
   }
 
   &__body {
-    color: colour(black);
+    color: colour(background-primary);
   }
 }

@@ -11,8 +11,8 @@
   }
 
   &__button {
-    background-color: colour(light-grey);
-    border: 1px solid colour(heading-orange);
+    background-color: colour(background-dark);
+    border: 1px solid colour(text-secondary);
     border-radius: 2px;
     cursor: pointer;
     margin: auto;
@@ -20,12 +20,12 @@
 
     &:hover {
       transition: ease-in-out 0.3s all;
-      background-color: colour(border-blue);
+      background-color: colour(background-primary);
     }
 
     a {
       text-decoration: none;
-      color: colour(heading-orange);
+      color: colour(text-secondary);
     }
   }
 
@@ -36,7 +36,7 @@
     &-item-1 {
       grid-column-start: [col1-start];
       grid-column-end: [col2-start];
-      border-bottom: 1px solid colour(light-grey);
+      border-bottom: 1px solid colour(background-secondary);
       padding-top: $base-spacing-unit;
     }
 
@@ -55,9 +55,9 @@
       a {
         text-decoration: none;
         font-size: 24px;
-        color: colour(heading-orange);
+        color: colour(text-secondary);
         &:hover {
-          color: colour(border-blue);
+          color: colour(text-focus);
           transition: ease-in-out 0.3s all;
         }
       }
@@ -71,9 +71,9 @@
 
       a {
         text-decoration: none;
-        color: black;
+        color: colour(text-default);
         &:hover {
-          color: colour(heading-orange);
+          color: colour(text-secondary);
           transition: ease-in-out 0.3s all;
         }
       }
@@ -87,7 +87,7 @@
     }
     &-date {
       font-weight: lighter;
-      color: colour(heading-orange);
+      color: colour(text-secondary);
       text-align: left;
       padding-bottom: $base-spacing-unit;
     }

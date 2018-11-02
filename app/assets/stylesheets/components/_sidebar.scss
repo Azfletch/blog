@@ -1,22 +1,22 @@
 .c-sidebar {
-  background-color: colour(dark-grey);
+  background-color: colour(background-dark);
   padding: 1.5em;
 
   &__heading {
-    color: colour(heading-orange);
+    color: colour(text-secondary);
     margin-top: $base-spacing-unit;
     text-align: center;
   }
   &__text {
-    color: colour(white);
+    color: colour(text-light);
     text-align: center;
 
     a {
-      color: colour(heading-orange);
+      color: colour(text-secondary);
       text-decoration: none;
 
       &:hover {
-        color: colour(border-blue);
+        color: colour(text-focus);
         transition: ease-in-out 0.3s all;
       }
     }
@@ -26,13 +26,6 @@
     display: block;
     padding-top: $base-spacing-unit;
     padding-left: $base-spacing-unit;
-  }
-
-  &__articles-table-head {
-    color: colour(heading-orange);
-  }
-  &__articles-table-cell {
-    color: colour(white);
   }
 }
 
