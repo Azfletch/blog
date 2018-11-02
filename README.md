@@ -10,7 +10,7 @@ $ cd blog
 $ bundle install
 ```
 
-Now :-
+Now boot the app:
 
 ```sh
 $ rails s
@@ -21,10 +21,10 @@ The blog should now be running on [localhost:4000](http://localhost:4000/).
 
 ## Running Tests
 
-To run the test suite use the following command
+To run the test suite use the following command:
 
 ```sh
-$ rails spec
+$ rspec
 
 ```
 
