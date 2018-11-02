@@ -18,18 +18,22 @@
     </div>
   <% end %>
 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
-
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class="o-form__edit">
+    <div class="o-form__edit-title">
+      <%= form.label :title %><br>
+    </div>
+    <div class="o-form__edit-input">
+      <%= form.text_field :title, class: "o-form__edit-input-field" %>
+    </div>
+    <div class="o-form__edit-title">
+      <%= form.label :text %><br>
+    </div>
+    <div class="o-form__edit-input">
+      <%= form.text_area :text, class: "o-form__edit-input-field" %>
+    </div>
+    <p>
+      <%= form.submit class: "o-form__edit-submit" %>
+    </p>
+  </div>
 
 <% end %>

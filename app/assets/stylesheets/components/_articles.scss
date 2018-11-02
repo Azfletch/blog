@@ -19,6 +19,21 @@
     text-align: center;
   }
 
+  &__button {
+    width: 60%;
+    background-color: colour(light-grey);
+    padding: $base-spacing-unit / 2;
+    border-radius: 5px;
+    border: 2px solid colour(heading-orange);
+    color: colour(dark-grey);
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: colour(dark-grey);
+    }
+  }
+
   &__body {
     margin: 0 auto;
     width: 75%;

@@ -32,6 +32,10 @@
     color: colour(dark-grey);
     padding: 0.2em;
 
+    &-list {
+      padding: 0;
+    }
+
     a {
       text-align: center;
       color: colour(dark-grey);
