@@ -10,6 +10,25 @@
     }
   }
 
+  &__button {
+    background-color: colour(border-blue);
+    border: 1px solid colour(heading-orange);
+    border-radius: 2px;
+    cursor: pointer;
+    margin: auto;
+    padding: $base-spacing-unit;
+
+    &:hover {
+      transition: ease-in-out 0.3s all;
+      background-color: colour(light-grey);
+    }
+
+    a {
+      text-decoration: none;
+      color: colour(heading-orange);
+    }
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
@@ -30,7 +49,18 @@
   &__content {
 
     &-option {
-      display: inline;
+      display: block;
+      padding-top: $base-spacing-unit;
+
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        color: colour(heading-orange);
+        &:hover {
+          color: colour(border-blue);
+          transition: ease-in-out 0.3s all;
+        }
+      }
     }
 
     &-title {

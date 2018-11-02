@@ -1,7 +1,9 @@
 <div>
   <div class="c-admin-articles__heading">
     <h1>All Published Articles</h1>
-    <button class="c-admin-article__button-new"><%= link_to "Write a new article", new_admin_article_path %></button>
+    <div class="c-admin-articles__button">
+      <%= link_to "Write a new article", new_admin_article_path %>
+    </div>
   </div>
   <div class="c-admin-articles__grid">
     <% @articles.each do |article| %>
