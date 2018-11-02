@@ -2,22 +2,22 @@
 @import "settings/config.scss";
 @import "settings/fonts.scss";
 
-@import "objects/button.scss";
-@import "objects/containers.scss";
-@import "objects/form.scss";
-@import "objects/grid.scss";
+@import "objects/o-button.scss";
+@import "objects/o-containers.scss";
+@import "objects/o-form.scss";
+@import "objects/o-grid.scss";
 
-@import "components/articles.scss";
-@import "components/comments.scss";
+@import "components/c-articles.scss";
+@import "components/c-comments.scss";
 @import "components/c-error.scss";
-@import "components/footer.scss";
-@import "components/hero.scss";
-@import "components/navigation.scss";
-@import "components/sidebar.scss";
-@import "components/welcome.scss";
+@import "components/c-footer.scss";
+@import "components/c-hero.scss";
+@import "components/c-navigation.scss";
+@import "components/c-sidebar.scss";
+@import "components/c-welcome.scss";
 
-@import "utils/normalize.scss";
-@import "utils/typography.scss";
+@import "utils/u-normalize.scss";
+@import "utils/u-typography.scss";
 
 // Admin 
 
