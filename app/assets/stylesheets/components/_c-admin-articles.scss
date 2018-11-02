@@ -17,6 +17,8 @@
     &-item-1 {
       grid-column-start: [col1-start];
       grid-column-end: [col2-start];
+      border-bottom: 1px solid colour(light-grey);
+      padding-top: $base-spacing-unit;
     }
 
     &-item-2 {
@@ -33,17 +35,31 @@
 
     &-title {
       h1 {
-        font-size: 16px;
+        text-align: left;
+        font-size: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: colour(heading-orange);
+          transition: ease-in-out 0.3s all;
+        }
       }
     }
 
     &-text {
       padding-top: $base-spacing-unit;
       padding-bottom: $base-spacing-unit;
+      text-align: left;
+      font-size: 18px;
     }
     &-date {
       font-weight: lighter;
       color: colour(heading-orange);
+      text-align: left;
+      padding-bottom: $base-spacing-unit;
     }
   }
 }
