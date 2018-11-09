@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    get '/', action: :index, controller: 'dashboard'
+    root "dashboard#index"
     resources :articles, :comments
   end
 
