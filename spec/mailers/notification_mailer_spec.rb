@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe NotificationMailer, :type => :mailer do
+RSpec.describe NotificationMailer, type: :mailer do
   describe "notify" do
     let!(:notification) { create(:notification) }
     let(:article) { create(:article) }
@@ -13,7 +13,7 @@ RSpec.describe NotificationMailer, :type => :mailer do
     end
 
     it "renders the body" do
-      expect(mail.body.encoded).to match("A new article has been posted on Arrons blog!")
+      expect(mail.body.encoded).to match("Visit <a href=\"#{article_url(article)}\">#{article.title}</a> to view the latest post.")
     end
   end
 end
