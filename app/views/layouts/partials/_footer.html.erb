@@ -1,0 +1,16 @@
+<div class="c-footer">
+  <h2 class="c-footer__heading">Sign Up For Email Notifications</h2>
+  <%= form_for :notification, class: "c-footer__form", url: notifications_path do |form| %>
+    <div class="o-grid__footer">
+      <p class="o-grid__footer-item-a">
+        <%= form.text_field :name, required: true, placeholder: "Name:", class: "c-footer__form-input-field" %>
+      </p>
+      <p class="o-grid__footer-item-b">
+        <%= form.text_field :email, :pattern => "[^@]+@[^@]+\.[a-zA-Z]{2,6}", required: true, placeholder: "Email:", class: "c-footer__form-input-field" %>
+      </p>
+      <p class="o-grid__footer-item-c">
+        <%= form.submit "Sign Up", class: "o-button  c-footer__form-button" %>
+      </p>
+    </div>
+  <% end %>
+</div>

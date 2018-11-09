@@ -1,0 +1,92 @@
+.c-admin-articles {
+
+  &__heading {
+    display: grid;
+    grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
+    padding-bottom: $base-spacing-unit *2;
+    
+    h1 {
+      margin: auto;
+    }
+  }
+
+  &__button {
+    background-color: colour(background-dark);
+    border: 1px solid colour(text-secondary);
+    border-radius: 2px;
+    cursor: pointer;
+    margin: auto;
+    padding: $base-spacing-unit;
+    text-decoration: none;
+    color: colour(text-secondary);
+
+    &:hover {
+      transition: ease-in-out 0.3s all;
+      background-color: colour(background-primary);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
+
+    &-item-1 {
+      grid-column-start: [col1-start];
+      grid-column-end: [col2-start];
+      border-bottom: 1px solid colour(background-secondary);
+      padding-top: $base-spacing-unit;
+    }
+
+    &-item-2 {
+      grid-column-start: [col2-start];
+      grid-column-end: [end];
+    }
+  }
+
+  &__content {
+
+    &-option {
+      display: block;
+      padding-top: $base-spacing-unit;
+
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        color: colour(text-secondary);
+        &:hover {
+          color: colour(text-focus);
+          transition: ease-in-out 0.3s all;
+        }
+      }
+    }
+
+    &-title {
+      h1 {
+        text-align: left;
+        font-size: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        color: colour(text-default);
+        &:hover {
+          color: colour(text-secondary);
+          transition: ease-in-out 0.3s all;
+        }
+      }
+    }
+
+    &-text {
+      padding-top: $base-spacing-unit;
+      padding-bottom: $base-spacing-unit;
+      text-align: left;
+      font-size: 18px;
+    }
+    &-date {
+      font-weight: lighter;
+      color: colour(text-secondary);
+      text-align: left;
+      padding-bottom: $base-spacing-unit;
+    }
+  }
+}

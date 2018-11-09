@@ -1,0 +1,36 @@
+.c-sidebar {
+  background-color: colour(background-dark);
+  padding: 1.5em;
+
+  &__heading {
+    color: colour(text-secondary);
+    margin-top: $base-spacing-unit;
+    text-align: center;
+  }
+  &__text {
+    color: colour(text-light);
+    text-align: center;
+
+    a {
+      color: colour(text-secondary);
+      text-decoration: none;
+
+      &:hover {
+        color: colour(text-focus);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+  }
+
+  &__burger {
+    display: block;
+    padding-top: $base-spacing-unit;
+    padding-left: $base-spacing-unit;
+  }
+}
+
+@media (max-width: 600px) {
+  .c-sidebar {
+    display: none;
+  }
+}

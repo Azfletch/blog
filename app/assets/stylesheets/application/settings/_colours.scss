@@ -1,0 +1,20 @@
+$base-colours: (
+  background-dark: #262626,
+  background-error: #ecabab,
+  background-light: #ffffff,
+  background-primary: #2b3d5a,
+  background-secondary: #9b9b9b,
+
+  border-highlight: #ffad33,
+  border-secondary: #9b9b9b,
+  
+  text-default: #262626,
+  text-error: #b00000,
+  text-focus: #2b3d5a,
+  text-light: #ffffff,
+  text-secondary: #ffad33,
+) !default;
+
+@function colour($name) {
+  @return map-get($base-colours, $name);
+}

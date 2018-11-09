@@ -1,0 +1,22 @@
+$button-base-spacing: 10px;
+$button-base-radius: 3px;
+$button-base-radius: 3px;
+$button-border-width: 1px;
+
+.o-button {
+  padding: $button-base-spacing $button-base-spacing*2;
+  background: colour(background-dark);
+  font-family: "Rubik", sans-serif;
+  color: colour(text-secondary);
+  border: $button-border-width solid colour(text-secondary);
+  border-radius: $button-base-radius;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    color: colour(text-focus);
+    background-color: colour(text-secondary);
+    transition: ease-in-out 0.5s all;
+  }
+}

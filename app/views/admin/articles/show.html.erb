@@ -14,13 +14,4 @@
       <%= @article.text %>
     </p>
   </div>
-  <div class="c-articles__comments">
-    <%= render @article.comments %>
-    <div class="c-articles__comments-heading">
-      <h2>Add a comment:</h2>
-    </div>
-    <%= render "comments/form" %>
-    <%= link_to "Edit", edit_admin_article_path(@article), class: "o-button" %>
-    <%= link_to "Back", admin_articles_path, class: "o-button" %>
-  </div>
 </div>

@@ -1,0 +1,23 @@
+.o-container {
+  background-color: colour(background-primary);
+  padding: 5%;
+  height: 100%;
+  position: relative;
+  &__content {
+    background-color: colour(background-light);
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .o-container__navigation {
+    width: 100%;
+    height: 70px;
+  }
+  .o-container {
+    background-color: colour(background-primary);
+    padding: 5%;
+    width: 90%;
+    position: static;
+  }
+}

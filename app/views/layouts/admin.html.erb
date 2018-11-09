@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    "admin/admin", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "admin/admin", "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <div class="o-container">
+      <div class="c-admin">
+        <div class="c-admin__header">
+          <h1 class="c-admin__header-title">Admin Panel</h1>
+          <p class="c-admin__header-text"><%= link_to "Back to App", root_path %></p>
+        </div>
+        <nav class="c-admin__nav">
+          <ul class="c-admin__nav-list">
+            <li><%= link_to "Articles", admin_articles_path %></li>
+            <li><a href="#">Users</a></li>
+          </ul>
+        </nav>
+        <div class="c-admin__body">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

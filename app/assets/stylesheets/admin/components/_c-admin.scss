@@ -1,0 +1,70 @@
+.c-admin {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+
+  &__header {
+    background-color: colour(background-dark);
+    color: colour(text-secondary);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: [col1-start] 80% [col2-start] 20% [end];
+
+    &-text {
+      float: right;
+
+      a {
+        text-decoration: none;
+        color: colour(text-secondary);
+        float: right;
+        vertical-align: bottom;
+
+        &:hover {
+          color: colour(text-focus);
+          transition: ease-in-out 0.3s all;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    background-color: colour(background-secondary);
+    color: colour(text-default);
+    padding: 0.2em;
+
+    &-list {
+      padding: 0;
+    }
+
+    a {
+      text-align: center;
+      color: colour(text-default);
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        color: colour(text-secondary);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+    li {
+      display: inline-block;
+      padding: 18px;
+    }
+    ul {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align:center;
+    }
+  }
+
+  &__body {
+    background-color: colour(background-light);
+    text-align: center;
+    padding: 1em;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.o-form {
+  &__edit {
+    &-title {
+      padding-bottom: $base-spacing-unit;
+      font-size: 20px;
+    }
+
+    &-input {
+      padding-bottom: $base-spacing-unit;
+
+      &-field {
+        padding: $base-spacing-unit / 2;
+        border-radius: 5px;
+        border: 2px solid colour(text-secondary);
+        width: 60%;
+      }
+    }
+
+    &-submit {
+      width: 63%;
+      background-color: colour(background-secondary);
+      padding: $base-spacing-unit / 2;
+      border-radius: 5px;
+      border: 2px solid colour(text-secondary);
+      color: colour(text-default);
+
+      &:hover {
+        transition: ease-in-out 0.3s all;
+        background-color: colour(background-primary);
+        color: colour(text-secondary);
+        cursor: pointer;
+      }
+    }
+  }
+}

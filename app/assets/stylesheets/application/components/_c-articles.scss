@@ -1,0 +1,105 @@
+.c-articles {
+  margin: 0 auto;
+  max-width: $base-spacing-unit*40;
+  height: 100%;
+  padding-bottom: auto;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: $base-spacing-unit*1.5;
+    padding-top: $base-spacing-unit*2;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  &__timestamp {
+    color: colour(text-secondary);
+    text-align: center;
+  }
+
+  &__button {
+    width: 60%;
+    background-color: colour(background-secondary);
+    padding: $base-spacing-unit / 2;
+    border-radius: 5px;
+    border: 2px solid colour(text-secondary);
+    color: colour(text-default);
+    margin: auto;
+
+    &:hover {
+      transition: ease-in-out 0.3s all;
+      background-color: colour(background-primary);
+      cursor: pointer;
+
+      a {
+        color: colour(text-secondary);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: colour(text-default);
+    }
+  }
+
+  &__body {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  &__table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__comments {
+    margin: 0 auto;
+    border-radius: 3px;
+    color: colour(text-secondary);
+    background-color: colour(background-primary);
+    padding: $base-spacing-unit;
+    width: 75%;
+    margin-bottom: $base-spacing-unit*2;
+    text-align: center;
+    padding-bottom: 50px;
+
+    &-form {
+      background-color: colour(text-secondary);
+      margin-top: 5px;
+      border-radius: 3px;
+      text-align: center;
+      padding-bottom: $base-spacing-unit;
+    }
+  }
+
+  &__content {
+    padding: $base-spacing-unit;
+    hr {
+      width: 90%;
+      border-color: colour(text-secondary);
+      margin: $base-spacing-unit;
+    }
+    &-title {
+      a {
+        text-decoration: none;
+        color: colour(text-default);
+        font-weight: 400;
+        &:hover {
+          color: colour(text-secondary);
+          transition: ease-in-out 0.3s all;
+        }
+      }
+    }
+    &-text {
+      padding-top: $base-spacing-unit;
+      padding-bottom: $base-spacing-unit;
+    }
+    &-date {
+      font-weight: lighter;
+      color: colour(text-secondary);
+    }
+  }
+}

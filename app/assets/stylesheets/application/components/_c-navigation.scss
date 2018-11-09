@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+.c-navigation {
+  height: 50px;
+  background-color: colour(background-dark);
+
+  @media (min-width: 600px) {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: colour(background-dark);
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    visibility: hidden;
+    &:checked~.c-navigation__menu {
+      left: 0%;
+    }
+  }
+
+  &__menu {
+    overflow: auto;
+    width: 100vw;
+    height: 100%;
+    left: 110%;
+    background-color: colour(background-dark);
+    position: absolute;
+    z-index: 999;
+    transition: left 0.4s;
+    margin: 0;
+    top: 80px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 600px) {
+      overflow: visible;
+      width: 100%;
+      background-color: transparent;
+      position: initial;
+      z-index: 1;
+      height: initial;
+    }
+
+    a {
+      color: colour(text-secondary);
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        color: colour(text-focus);
+        transition: ease-in-out 0.3s all;
+      }
+    }
+
+    li {
+      display: block;
+      padding-top: $base-spacing-unit;
+    }
+
+    ul {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align:center;
+    }
+
+    &_list {
+      list-style: none;
+      padding-left: 3rem;
+
+      @media (min-width: 600px) {
+        margin: 0;
+
+        li {
+            display: inline-block;
+            padding: 18px;
+        }
+
+        a {
+          text-align: center;
+          color: colour(text-secondary);
+        }
+      }
+    }
+
+    &_button {
+      display: block;
+      background: url("https://svgshare.com/i/7X_.svg") no-repeat center center;
+      text-indent: -200%;
+      width: 37px;
+      height: 37px;
+      float: right;
+      margin-top: 0.5rem;
+      color: colour(background-dark);
+      margin-right: 2rem;
+      
+      @media (min-width: 600px) {
+        display: none;
+      }
+    }
+  }
+}

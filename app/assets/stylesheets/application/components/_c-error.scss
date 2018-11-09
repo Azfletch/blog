@@ -1,0 +1,9 @@
+.c-error {
+  background-color: colour(background-error);
+  padding: $base-spacing-unit;
+  border: 1px solid colour(text-error);
+  border-radius: 3px;
+  color: colour(text-error);
+  text-align: left;
+  margin-bottom: $base-spacing-unit;
+}

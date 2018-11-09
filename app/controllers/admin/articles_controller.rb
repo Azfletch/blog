@@ -1,6 +1,5 @@
-class Admin::ArticlesController < Admin::BaseController
-
-before_action :get_article, only: [:show, :edit]
+class Admin::ArticlesController < Admin::ApplicationController
+  before_action :get_article, except: [:index, :create, :new]
 
   def index
     @articles = Article.all
@@ -22,33 +21,31 @@ before_action :get_article, only: [:show, :edit]
     if @article.save
       redirect_to @article
     else
-      render "new"
+      render :new
     end
   end
 
   def update
-    @article = Article.find(params[:id])
-
     if @article.update(article_params)
       redirect_to @article
     else
-      render "edit"
+      render :edit
     end
   end
 
   def destroy
-    @article = Article.find(params[:id])
     @article.destroy
 
     redirect_to articles_path
   end
 
   private
-    def article_params
-      params.require(:article).permit(:title, :text)
-    end
 
-    def get_article
-      @article = Article.find(params[:id])
-    end
+  def article_params
+    params.require(:article).permit(:title, :text)
+  end
+
+  def get_article
+    @article = Article.find(params[:id])
+  end
 end

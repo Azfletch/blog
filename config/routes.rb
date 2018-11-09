@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
-  root "welcome#index"
-
-  get "welcome/index"
+  root "articles#index"
 
   resources :articles, only: [:index, :show] do
-    resources :comments
+    resources :comments, only: [:create]
   end
 
   namespace :admin do
-    resources :articles, :comments
+    root "dashboard#index"
+    resources :articles
   end
+
+  resources :notifications, only: [:new, :create]
 end

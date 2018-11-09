@@ -1,25 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running Locally
 
-Things you may want to cover:
+Make sure you have Ruby installed.
 
-* Ruby version
+```sh
+$ git clone git@github.com:Azfletch/blog.git
+$ cd blog
+$ bundle install
+```
 
-* System dependencies
+Now boot the app:
 
-* Configuration
+```sh
+$ rails s
 
-* Database creation
+```
 
-* Database initialization
+The blog should now be running on [localhost:4000](http://localhost:4000/).
 
-* How to run the test suite
+## Running Tests
 
-* Services (job queues, cache servers, search engines, etc.)
+To run the test suite use the following command:
 
-* Deployment instructions
+```sh
+$ rspec
 
-* ...
-# blog
+```
+
+## Database setup
+
+```sh
+$ rails db:create
+$ rails db:migrate
+
+```
