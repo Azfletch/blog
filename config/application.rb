@@ -15,9 +15,9 @@ module Blog
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.action_mailer.default_url_options = { host: "localhost:4000" }
-    config.action_mailer.asset_host = "http://localhost:4000"
-    
+    config.action_mailer.default_url_options = { host: ENV.fetch("MAILER_HOST") }
+    config.action_mailer.asset_host = ENV.fetch("MAILER_HOST")
+
     # Not sure if I need this line as method already set in config/environments/development.rb
     config.action_mailer.delivery_method = :smtp
 
