@@ -7,9 +7,9 @@ RSpec.describe NotificationMailer, type: :mailer do
     let(:mail) { NotificationMailer.notification_email(article) }
 
     it "renders the headers" do
-      expect(mail.subject).to eq("New blog post!!!")
+      expect(mail.subject).to eq("Arrons blog has been updated!")
       expect(mail.to).to eq([notification.email])
-      expect(mail.from).to eq(["notifications@example.com"])
+      expect(mail.from).to eq(["arron.fletcher@shiftcommerce.com"])
     end
 
     it "renders the body" do
