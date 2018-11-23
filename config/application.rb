@@ -15,9 +15,18 @@ module Blog
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.action_mailer.default_url_options = { host: "localhost:4000" }
-    config.action_mailer.asset_host = "http://localhost:4000"
-    config.action_mailer.delivery_method = :postmark
-    config.action_mailer.postmark_settings = { :api_token => "POSTMARK-SERVER-API-TOKEN-HERE" }
+
+    # Not sure if I need this line as method already set in config/environments/development.rb
+    config.action_mailer.delivery_method = :smtp
+
+    # implemented settings based on https://postmarkapp.com/developer/user-guide/sending-email/sending-with-smtp
+    config.action_mailer.postmark_settings = {
+      address:                "smtp.postmarkapp.com",
+      port:                   25,
+      user_name:              ENV.fetch("SMTP_USERNAME"),
+      password:               ENV.fetch("SMTP_PASSWORD"),
+      authentication:         "plain",
+      enable_starttls_auto:   true
+    }
   end
 end
