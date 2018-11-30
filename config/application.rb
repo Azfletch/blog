@@ -22,7 +22,7 @@ module Blog
     config.action_mailer.delivery_method = :smtp
 
     # implemented settings based on https://postmarkapp.com/developer/user-guide/sending-email/sending-with-smtp
-    config.action_mailer.postmark_settings = {
+    config.action_mailer.smtp_settings = {
       address:                "smtp.postmarkapp.com",
       port:                   25,
       user_name:              ENV.fetch("SMTP_NAME"),
