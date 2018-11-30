@@ -33,4 +33,7 @@
 procoders-unit1.md
 
 # Ignore Ruby Style Guide
- STYLEGUIDE.md
+STYLEGUIDE.md
+
+# Ignore .env
+.env

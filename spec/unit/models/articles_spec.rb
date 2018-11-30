@@ -14,8 +14,15 @@ end
 
 RSpec.describe Article, :type => :model do
   it "edit article" do
-    @article = Article.new(title: "Testing", text:"test123")
+    @article = Article.new(title: "Testing", text: "test123")
     @article.update(title: "Testing123", text: "123121231")
     expect(@article).to have_attributes(title: "Testing123")
+  end
+end
+
+RSpec.describe Article, :type => :model do
+  it "sends out an email when an article is created" do
+    @article = Article.new(title: "New Article", text: "new article")
+    expect(@article).to respond_to(:send_notification)
   end
 end

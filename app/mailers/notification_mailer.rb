@@ -8,7 +8,6 @@ class NotificationMailer < ApplicationMailer
         to: notification.email,
         subject: "Arrons blog has been updated!",
         from: "arron.fletcher@shiftcommerce.com",
-        track_opens: "true"
         )
     end
   end

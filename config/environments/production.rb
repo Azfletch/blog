@@ -92,6 +92,13 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.default_url_options = { host: ENV.fetch("MAILER_HOST") }
+  config.action_mailer.asset_host = ENV.fetch("MAILER_HOST")
+
+  # Not sure if I need this line as method already set in config/environments/development.rb
+  config.action_mailer.delivery_method = :smtp
+
+  # implemented settings based on https://postmarkapp.com/developer/user-guide/sending-email/sending-with-smtp
   config.action_mailer.smtp_settings = {
     address:                "smtp.postmarkapp.com",
     port:                   25,
