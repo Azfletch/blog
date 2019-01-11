@@ -27,7 +27,7 @@ RSpec.describe Article, type: :model do
   describe "editing an article with valid data" do
     let!(:article) { create(:article) }
 
-    it "should be updated" do
+    it "should update" do
       article.update(title: "Testing123", text: "123121231")
 
       expect(article).to have_attributes(title: "Testing123")
