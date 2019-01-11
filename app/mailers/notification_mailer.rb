@@ -2,8 +2,8 @@ class NotificationMailer < ApplicationMailer
 
   def notification_email(article)
     @article = article
-    notifications = Notification.all
-    notifications.each do |notification|
+
+    Notification.in_batches.each_record do |notification|
       mail(
         to: notification.email,
         subject: "Arrons blog has been updated!",

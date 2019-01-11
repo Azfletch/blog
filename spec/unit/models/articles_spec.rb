@@ -1,28 +1,36 @@
 require "rails_helper"
 
-RSpec.describe Article, :type => :model do
-  it "creates new article" do
-    expect(Article.new(title: "Testing", text: "Test" )).to be_valid
-  end
-end
+RSpec.describe Article, type: :model do
+  describe "creating a new valid article" do
+    let(:article) { build(:article) }
 
-RSpec.describe Article, :type => :model do
-  it "wont create article because of article params" do
-    expect(Article.new(title: "Test", text: "Test" )).not_to be_valid
+    it "should be valid" do
+      expect(article).to be_valid
+    end
   end
-end
 
-RSpec.describe Article, :type => :model do
-  it "edit article" do
-    @article = Article.new(title: "Testing", text: "test123")
-    @article.update(title: "Testing123", text: "123121231")
-    expect(@article).to have_attributes(title: "Testing123")
+  describe "creating an article" do
+    it "sends out an email when an article is created" do
+      create(:notification)
+      expect{create(:article)}.to change{ActionMailer::Base.deliveries.count}.by(1)
+    end
   end
-end
 
-RSpec.describe Article, :type => :model do
-  it "sends out an email when an article is created" do
-    @article = Article.new(title: "New Article", text: "new article")
-    expect(@article).to respond_to(:send_notification)
+  describe "creating an invalid article" do
+    let(:article) { build(:article, title: "Test") }
+
+    it "should be invalid" do
+      expect(article).not_to be_valid
+    end
+  end 
+
+  describe "editing an article with valid data" do
+    let!(:article) { create(:article) }
+
+    it "should be updated" do
+      article.update(title: "Testing123", text: "123121231")
+
+      expect(article).to have_attributes(title: "Testing123")
+    end
   end
 end
