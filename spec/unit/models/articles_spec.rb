@@ -23,6 +23,6 @@ end
 RSpec.describe Article, :type => :model do
   it "sends out an email when an article is created" do
     @article = Article.new(title: "New Article", text: "new article")
-    expect(Article).to receive(:send_notification).with(no_args).once
+    expect(@article).to respond_to(:send_notification)
   end
 end
